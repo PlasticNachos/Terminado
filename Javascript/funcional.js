@@ -20,20 +20,20 @@ function inicio(){
 
 function buscar(){  
     event.preventDefault(); 
-    esconderSecciones();
     let input = document.getElementById("idBuscador").value
     let formBuscador = document.getElementById("idFormBuscador");
     if (formBuscador.reportValidity()){
+        esconderSecciones();
         let contenedor = document.getElementById("idDiv");
         contenedor.innerHTML="";
         if (sistema.darTodoRelacionado(input).length!=0){
-            esconderSecciones();
             document.getElementById("Seccion2").style.display = "block";
             let datos = sistema.darTodoRelacionado(input).sort(function(a,b){return b.numeroReclamo-a.numeroReclamo})
             for (let elem of datos){
                 agregarArticulosDeReclamo(elem);
             }
         } else {
+            esconderSecciones();
             document.getElementById("Seccion2").style.display = "block";
             let nodo = document.createElement("p");
             let nodoTexto = document.createTextNode("No hay datos.");
