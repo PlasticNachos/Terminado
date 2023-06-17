@@ -432,6 +432,7 @@ function cargarListaRubrosMaxCantidadReclamos(){
             listaRubrosMaxReclamosEnPagina.appendChild(nodo);
         }
     } else {
+        listaRubrosMaxReclamosEnPagina.innerHTML="";
         let nodo = document.createElement("li");
         let nodotexto = document.createTextNode("No hay datos.");
         nodo.appendChild(nodotexto);
