@@ -1,0 +1,219 @@
+/*Valentina Begino e Ignacio Menéndez.*/
+/*Formato general de la página.*/
+
+h1{font-size: 30px;}
+html, body{
+    background-color: #afc957;
+    font-family: Arial;
+}
+
+/*Sección 0 (Navegador).*/
+
+#Seccion0 li{
+    display: inline; /*Muestra los elementos de la lista horizontalmente.*/
+    margin-right: 50px; /*Espaciado entre los elementos de la lista.*/
+}
+
+#Seccion0 li a:hover{
+    color: darkgreen /*Color de texto de los hipervínculos cuando el cursor está sobre ellos.*/
+}
+
+#Seccion0 ul{
+    display: flex; 
+    align-items: center; /*Alinea los elementos de la lista al eje horizontal central de la sección.*/
+}
+
+#idImagenReclamo{
+    max-width: 150px; /*Ajusta el ancho de la imagen.*/
+}
+
+a {
+    color: #118c13; /*Color de texto de los hipervínculos.*/
+}
+
+#idBotonLupa{
+    width:20px;
+}
+
+/*Sección 1 (Sitio para gestión de Reclamos).*/
+
+#Seccion1{
+    background-color: #fe9f79;
+}
+
+/*Article 1.*/
+
+.ImagenEstudiantes{
+    margin-bottom: -10px;
+    width:25px;
+    border: 1px solid #ffffff; /* Grosor y color del borde */
+    border-radius: 5px; /* Radio de las esquinas del borde */
+    padding:4px
+}
+
+.info {
+    width: 600px;
+}
+
+/*div Contenedor Padre 1*/
+
+#idContenedorPadre{
+    display: flex;
+    justify-content: center; /*Centra los elementos del article al eje vertical.*/
+}
+
+#idBotonReclamo {
+    font-size: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: auto;
+    width: 370px;
+    border-radius: 20px;
+    border-color: black;
+    background: linear-gradient(to bottom, #6bd262, #bc634a);
+    color: black; /*Estilización del botón.*/
+    justify-content: center;
+  }
+
+#idBotonReclamo:hover{
+    background: linear-gradient(to bottom, #55a64e, #874735); 
+}
+
+#idBotonReclamo:active{
+    background: grey; 
+
+}
+
+/*Article Reclamo*/
+
+#idAgregarReclamo p{
+    margin-top: -15px; /*Modifica el interlineado entre los párrafos dentro del artículo.*/
+}
+
+#idAgregarReclamo{
+    background-color:  #c49b51;
+}
+
+#idNom{
+    margin-left: 15px; /*Modifica el margen del input de texto.*/
+    width:150px;
+}
+
+#idSelectDropdown{
+    margin-left: 3.5px;
+    width: 158px;
+}
+
+#idReclamo{
+    width: 150px;
+}
+
+#idParrafoReclamo{
+    margin-left: 72px;
+    margin-top: -14px;
+    margin-bottom: -2px;
+}
+
+#idBotonAgregar{
+    margin-left: 72px;
+}
+
+/*Sección 2 (Reclamos ingresados).*/
+
+#Seccion2{
+    background-color: #c17650;
+}
+
+.ReclamosIngresados{
+    background-color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 3px solid;
+    border-color: black; 
+    border-radius: 20px;
+    padding-left: 15%; /*Estilización de los artículos Reclamos.*/
+}
+
+.Comentarios{
+    background-color: #fd9d67;
+}
+
+.Empresas{
+    background-color: #43c440;
+}
+
+/*Sección 3 (Estadísticas).*/
+
+#Seccion3{
+    background-color: #c49b51;
+}
+
+.BotonesActive {
+    background-color: #43c440;
+    margin-left: 3px;
+    width: 30px;
+}
+
+.Botones{
+    margin-left: 3px;
+    width: 30px;
+}
+
+/*Article Tabla Etadísticas.*/
+
+.EstadisticasEmpresas{
+   text-align: center; /*Alinea el texto del artículo hacia el eje vertical central de su respectivo contenedor.*/
+}
+
+
+
+#idTabla{
+    margin-left: 5%;
+    width: 90%; /*Modifica el ancho de la tabla.*/
+    border-radius: 15px;
+}
+ 
+#idTabla, th, td {
+    border: 3px solid;
+    background-color: white;
+}
+
+/*Sección 4 (Agregar empresa).*/
+
+#Seccion4{
+    background-color: #99f996;
+}
+
+#idNom2{
+    margin-left: 13.5px;
+    width:150px
+}
+
+
+#idDirec{
+    margin-left: 4px;
+    width:150px
+}
+
+#idRubro{
+    margin-left: 22px;
+    width: 158px;
+}
+
+#idBotonAgregar2{
+    margin-left: 70px;
+}
+
+#idDatos p{
+    margin-bottom: -15px;  
+}
+
+.Datos{
+    padding-bottom: 25px;
+}
+
+/*Esconder secciones.*/
+
+.Seccion{
+    display: none;
+}
