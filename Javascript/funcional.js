@@ -82,7 +82,7 @@ function menuAgregarReclamo(){
         mostrarAgregarReclamo();
         esconderGestionReclamos();
     } else {
-        alert("No hay empresas agregadas.");
+        alert("No hay empresas ingresadas.");
     }
 }
 
